@@ -1,0 +1,13 @@
+workspace:
+  id: 8f79cf26-39b8-471d-8fd2-9c354e6b892c
+
+localResources:
+  specs:
+    - ../postman/specs/New Specification/New Specification.yaml
+resourceNameMappings:
+  specs:
+    - ../postman/specs/New Specification/New Specification.yaml: New Specification
+
+cloudResources:
+  collections:
+    ../postman/collections/Travel Packages API: af335fe5-48d9-43f0-a3ea-aff65b7d6559

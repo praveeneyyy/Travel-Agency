@@ -1,0 +1,119 @@
+{
+  "info": {
+    "name": "Travel Packages API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1. Create Package (POST)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Goa Beach Gataway\",\n  \"destination\": \"Goa\",\n  \"category\": \"Beach\",\n  \"pricePerPerson\": 18500,\n  \"durationDays\": 4,\n  \"includesFlight\": false\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/packages",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "packages"]
+        }
+      }
+    },
+    {
+      "name": "2. Get All Packages (GET)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/packages",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "packages"]
+        }
+      }
+    },
+    {
+      "name": "3. Get Package by ID (GET)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/packages/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "packages", "1"]
+        }
+      }
+    },
+    {
+      "name": "4. Replace Package (PUT)",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Goa Luxury Retreat\",\n  \"destination\": \"Goa\",\n  \"category\": \"Luxury\",\n  \"pricePerPerson\": 25000,\n  \"durationDays\": 5,\n  \"includesFlight\": true\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/packages/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "packages", "1"]
+        }
+      }
+    },
+    {
+      "name": "5. Partial Update (PATCH)",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"pricePerPerson\": 22000\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/packages/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "packages", "1"]
+        }
+      }
+    },
+    {
+      "name": "6. Delete Package (DELETE)",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/packages/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "packages", "1"]
+        }
+      }
+    }
+  ]
+}

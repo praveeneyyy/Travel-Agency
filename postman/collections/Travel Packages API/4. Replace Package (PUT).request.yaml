@@ -1,0 +1,17 @@
+$kind: http-request
+url: http://localhost:8080/api/packages/1
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "name": "Goa Luxury Retreat",
+      "destination": "Goa",
+      "category": "Luxury",
+      "pricePerPerson": 25000,
+      "durationDays": 5,
+      "includesFlight": true
+    }
+order: 4000

@@ -1,0 +1,17 @@
+$kind: http-request
+url: http://localhost:8080/api/packages
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "name": "Goa Beach Gataway",
+      "destination": "Goa",
+      "category": "Beach",
+      "pricePerPerson": 18500,
+      "durationDays": 4,
+      "includesFlight": false
+    }
+order: 1000

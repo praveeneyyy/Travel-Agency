@@ -1,0 +1,12 @@
+$kind: http-request
+url: http://localhost:8080/api/packages/1
+method: PATCH
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "pricePerPerson": 22000
+    }
+order: 5000
